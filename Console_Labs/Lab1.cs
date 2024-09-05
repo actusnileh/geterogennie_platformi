@@ -1,9 +1,14 @@
-using Microsoft.VisualBasic;
-
 public class Lab1()
 {
 
-    private class Student(string numberLab, string fio, string group, string dateOfBirth, string city, string subjectSchool, string hobby)
+    private class Student(
+        string numberLab,
+        string fio,
+        string group,
+        string dateOfBirth,
+        string city,
+        string subjectSchool,
+        string hobby)
     {
         private string NumberLab { get; } = numberLab;
         private string FIO { get; } = fio;
@@ -13,9 +18,7 @@ public class Lab1()
         private string SubjectSchool { get; } = subjectSchool;
         private string Hobby { get; } = hobby;
 
-        public void DisplayInformation()
-        {
-            Console.WriteLine(
+        public void DisplayInformation() => Console.WriteLine(
                 "Задание 1.\n" +
                 $"Лаб. работа: {NumberLab}\n" +
                 $"ФИО: {FIO}\n" +
@@ -25,7 +28,6 @@ public class Lab1()
                 $"Любимый предмет в школе: {SubjectSchool}\n" +
                 $"Хобби: {Hobby}\n\n"
             );
-        }
     }
 
     public static void Student_Information()
@@ -44,7 +46,8 @@ public class Lab1()
     }
 
 
-    public static void Calculation(double w = 12,
+    public static void Calculation(
+        double w = 12,
         double l = 2,
         double b = 5,
         double t = 15,
