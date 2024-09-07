@@ -19,14 +19,14 @@ public class Lab1()
         private string Hobby { get; } = hobby;
 
         public void DisplayInformation() => Console.WriteLine(
-                "Задание 1.\n" +
+                "\nЗадание 1.\n" +
                 $"Лаб. работа: {NumberLab}\n" +
                 $"ФИО: {FIO}\n" +
                 $"Группа: {Group}\n" +
                 $"Дата рождения: {DateOfBirth}\n" +
                 $"Город: {City}\n" +
                 $"Любимый предмет в школе: {SubjectSchool}\n" +
-                $"Хобби: {Hobby}\n\n"
+                $"Хобби: {Hobby}\n"
             );
     }
 
