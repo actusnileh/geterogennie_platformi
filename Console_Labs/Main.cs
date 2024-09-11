@@ -25,6 +25,11 @@
                     Lab3.Calculation();
                     break;
                 }
+            case "4":
+                {
+                    Lab4.Calculation();
+                    break;
+                }
             default:
                 {
                     Console.WriteLine("Такой лаб.работы нет.");
