@@ -27,13 +27,31 @@ public class Lab4
             }
             input.Write($"{numbers[i]}, ");
         }
-        /*
-        TODO: В результате работы программы должен быть сформирован выходной
-        файл, который содержит следующие значения:
-            1) максимальный элемент среди всех кратных 5;
-            2) минимальный элемент среди всех кратных 3;
-            3) сумму элементов, которые делятся на 10.
-        */
+
+        int max_5 = int.MinValue;
+        int min_3 = int.MaxValue;
+        int sum_10 = 0;
+
+        foreach (int number in numbers)
+        {
+            if (number % 5 == 0)
+            {
+                max_5 = Math.Max(max_5, number);
+            }
+            if (number % 3 == 0)
+            {
+                min_3 = Math.Min(min_3, number);
+            }
+            if (number % 10 == 0)
+            {
+                sum_10 += number;
+            }
+        }
+        if (min_3 == int.MaxValue)
+        {
+            min_3 = 0;
+        }
+        WriteResult(max_5, min_3, sum_10);
     }
 
     private static int[] GenerateRandomArray(int elements)
