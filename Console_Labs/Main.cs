@@ -2,7 +2,7 @@
 {
     private static void Main(string[] args)
     {
-        Console.Write("Введите номер лаб.работы: ");
+        Console.Write("Введите номер лаб.работы (1-11): ");
 
         string choice = Console.ReadLine() ?? string.Empty;
 
@@ -28,6 +28,11 @@
             case "4":
                 {
                     Lab4.Calculation();
+                    break;
+                }
+            case "5":
+                {
+                    Lab5.Calculation();
                     break;
                 }
             default:
