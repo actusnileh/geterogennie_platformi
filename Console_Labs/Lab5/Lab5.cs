@@ -3,14 +3,18 @@ public class Lab5
     public static void Calculation(int q = 10, int z = 5)
     {
         string inputFile = "./Lab5/input.txt";
-        int rows, cols;
+        int rows = 0, cols = 0;
 
         try
         {
             using StreamReader reader = new(inputFile);
-            var dimensions = reader.ReadLine().Split(' ');
-            rows = int.Parse(dimensions[0]);
-            cols = int.Parse(dimensions[1]);
+            string? line = reader.ReadLine();
+            if (line != null)
+            {
+                var dimensions = line.Split(' ');
+                rows = int.Parse(dimensions[0]);
+                cols = int.Parse(dimensions[1]);
+            }
         }
         catch (Exception ex)
         {
