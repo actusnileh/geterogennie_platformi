@@ -1,0 +1,11 @@
+Название: ArchLinux, Версия: 2024.10.01
+Тип: Free
+
+Название: Windows 11, Версия: 24H2
+Тип: Proprietary
+
+Название: Visual Studio Code, Версия: 2024
+
+Название: Photoshop, Версия: CC 2016
+
+
